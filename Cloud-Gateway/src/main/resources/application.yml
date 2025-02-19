@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          "[/**]":
+            allowedOrigins: "http://localhost:3000,http://localhost:3001,http://localhost:3002,https://lueurtech.in,https://form.lueurtech.in,https://uat.form.lueurtech.in,https://test.lueurtech.in"
+            allowedMethods: "GET,POST,PATCH,PUT,DELETE,OPTIONS"
+            allowedHeaders: "*"
+            maxAge: 3600
+            allowCredentials: true
